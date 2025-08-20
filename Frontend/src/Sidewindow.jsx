@@ -25,7 +25,7 @@ function Sidewindow() {
     try {
       setThreadId(newThreadId);
       const res = await fetch(
-        `http://localhost:8181/api/thread/${newThreadId}`
+        `https://vaani-1-4cmq.onrender.com/api/thread/${newThreadId}`
       );
       const data = await res.json();
       setPrevChats(data);
@@ -38,9 +38,12 @@ function Sidewindow() {
 
   const deleteThread = async (deletethreadID) => {
     try {
-      await fetch(`http://localhost:8181/api/thread/${deletethreadID}`, {
-        method: "DELETE",
-      });
+      await fetch(
+        `https://vaani-1-4cmq.onrender.com/api/thread/${deletethreadID}`,
+        {
+          method: "DELETE",
+        }
+      );
       await getAllthreads();
 
       if (deletethreadID === currthreadId) {

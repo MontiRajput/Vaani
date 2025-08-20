@@ -17,7 +17,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   const getAllthreads = async () => {
     try {
-      const reply = await fetch("http://localhost:8181/api/thread");
+      const reply = await fetch("https://vaani-1-4cmq.onrender.com/api/thread");
       const res = await reply.json();
       // console.log(res);
       setthreads(res);

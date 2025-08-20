@@ -44,15 +44,18 @@ function Chatwindow() {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:8181/api/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          message: msg,
-          threadId: currthreadId,
-          count: prevChats.length,
-        }),
-      });
+      const response = await fetch(
+        "https://vaani-1-4cmq.onrender.com/api/chat",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            message: msg,
+            threadId: currthreadId,
+            count: prevChats.length,
+          }),
+        }
+      );
 
       const res = await response.json();
       if (prevChats.length == 2) {
