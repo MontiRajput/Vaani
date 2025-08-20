@@ -1,0 +1,108 @@
+.chatwindow {
+  height: calc(100vh - 14px);
+  width: 100vw;
+  margin-left: 10px;
+  border: 2px solid rgba(98, 94, 98, 0.747);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 1px 1px 10px rgba(98, 94, 98, 0.489);
+  background-color: rgb(246 246 246);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar img {
+  width: 120px;
+  height: 50px;
+  object-fit: cover;
+}
+.chat-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-input {
+  display: flex;
+
+  width: 100%;
+  width: 700px;
+  background-color: rgba(209, 209, 209, 0.144);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px rgba(82, 82, 82, 0.272);
+}
+.user-input input {
+  all: unset;
+
+  width: 100%;
+  height: 30px;
+  font-size: large;
+}
+.user-input i {
+  font-size: 25px;
+}
+.user-input + p {
+  color: rgb(92, 92, 92);
+}
+
+.profile {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  background-color: rgb(190, 140, 236);
+  box-shadow: 10px 10px 30px rgba(137, 43, 226, 0.375);
+  padding: 10px 15px;
+  line-height: 30px;
+  border-radius: 10px;
+}
+.profile .fa-user {
+  display: inline;
+  background-color: rgba(137, 43, 226, 0);
+  color: rgba(3, 3, 3, 0.407);
+  font-size: 15px;
+}
+.profile .user-mail {
+  color: rgba(3, 3, 3, 0.407);
+}
+.profile-icons {
+  padding: 0px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.profile-icons:hover {
+  background-color: rgba(240, 248, 255, 0.615);
+}
+.loader {
+  bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .user-input {
+    width: 90%;
+  }
+  .chat-input p {
+    margin-bottom: 0;
+  }
+  .chatwindow {
+    margin-left: 0;
+    border-radius: 0;
+    border: none;
+    height: 100vh;
+  }
+  .temp img {
+    margin-top: 100px !important;
+    width: 100px;
+  }
+  h3 {
+    padding-top: 50%;
+    text-align: center;
+    font-size: 26px !important;
+  }
+}

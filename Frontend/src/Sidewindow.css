@@ -1,0 +1,140 @@
+.side-window {
+  position: relative;
+  background-color: rgba(137, 43, 226, 0.146);
+  border: 2px solid rgba(137, 43, 226, 0.304);
+  height: calc(100vh - 14px);
+  box-shadow: 1px 1px 20px rgba(56, 55, 56, 0.521);
+  font-size: 17px;
+  border-radius: 20px;
+  min-width: 330px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.flx {
+  position: fixed;
+  top: 90px;
+  left: 70px;
+  width: 40px;
+}
+.logo {
+  width: 40px;
+  border-radius: 100% !important;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.137);
+  background-color: rgb(206, 206, 206);
+}
+.top i,
+.top img {
+  padding: 5px;
+}
+
+.tag:hover,
+.top img:hover {
+  background-color: rgba(137, 43, 226, 0.477);
+  cursor: pointer;
+
+  border-radius: 10px;
+}
+.tools {
+  width: 94%;
+  padding: 7px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block; /* makes background wrap */
+}
+
+.tools:hover {
+  background-color: rgba(137, 43, 226, 0.477);
+}
+
+.connect {
+  margin: 30px 0px;
+}
+.hide-title {
+  margin-top: 60px;
+  color: rgb(199, 197, 197);
+}
+.connect a {
+  padding: 7px;
+  display: block;
+  text-decoration: none;
+}
+.connect a:hover {
+  background-color: rgba(137, 43, 226, 0.477);
+  border-radius: 10px;
+}
+.history {
+  list-style-type: none;
+  padding: 0;
+  height: 250px;
+  overflow-y: scroll;
+}
+
+.sign {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  border-radius: 0 0 20px 20px;
+  left: 0;
+  padding: 5px 20px;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+.tag {
+  font-size: 25px;
+}
+.links {
+  padding: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.links p {
+  all: unset;
+  width: 290px;
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide extra text */
+  text-overflow: ellipsis; /* show ... at the end if too long */
+}
+.links:hover {
+  background-color: rgba(137, 43, 226, 0.477);
+}
+
+.links i {
+  display: none;
+}
+.links:hover .fa-trash-can {
+  display: block;
+}
+.fa-trash-can:hover {
+  color: rgb(223, 112, 38);
+}
+.highlighted {
+  background-color: rgba(137, 43, 226, 0.116);
+}
+.hidden {
+  height: 0vh;
+}
+@media screen and (max-width: 768px) {
+  .side-window {
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0;
+  }
+  .history {
+    height: 400px;
+  }
+  .logo {
+    top: 65px;
+    left: 50px;
+  }
+}

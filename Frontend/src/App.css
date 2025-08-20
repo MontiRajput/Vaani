@@ -1,0 +1,30 @@
+* {
+  color: #0d0d0d;
+  font-family: Roboto, "Open Sans";
+}
+
+.main {
+  display: flex;
+  padding: 7px;
+  height: 100vh;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.fa-user {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  border-radius: 50%;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 0px;
+  }
+}
