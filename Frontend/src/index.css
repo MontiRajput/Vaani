@@ -5,4 +5,5 @@ body {
   height: 100%;
   overflow-x: hidden; /* also avoids sideways scroll */
   overflow-y: hidden;
+  font-family: "Times New Roman", Times, serif;
 }
