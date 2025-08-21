@@ -53,6 +53,12 @@ function Sidewindow() {
       console.error("Error deleting thread:", err);
     }
   };
+  useEffect(() => {
+    const width = window.innerWidth;
+    if (width < 769) {
+      setisActive(false);
+    }
+  }, []);
 
   const getNewChat = async () => {
     setNewChat(true);
